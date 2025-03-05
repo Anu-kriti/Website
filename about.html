@@ -1,47 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
-    <header style="background: #ff9800; padding: 20px; text-align: center; color: white;">
-        <h1>About Me</h1>
+    <header class="bg-warning text-white text-center py-4 shadow-lg">
+        <h1 class="animate__animated animate__fadeInDown">About Me</h1>
         <nav>
-            <ul>
-                <li><a href="about.html">Home</a></li>
-                <li><a href="academics.html">Education</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="academics.html">Education</a></li>
-                <li><a href="awards.html">Awards</a></li>
-                <li><a href="contact.html">Contact</a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="about" class="container" style="display: flex; align-items: center; justify-content: space-between;">
-        <div style="flex: 1; text-align: center;">
-            <img src="static/img/profile.jpg" alt="Profile Picture" class="profile-pic" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #333;">
-        </div>
-        <div style="flex: 2; padding: 20px;">
-            <h2>Who Am I?</h2>
-            <p>Hello! I'm Anukriti Gupta, an AI Consultant with expertise in scalable data solutions, machine learning, and real-time analytics.</p>
-            <p>With over 10 years of experience, I have worked with leading companies, optimizing AI-driven projects and developing advanced data systems.</p>
-            <p>Beyond my professional career, I am an advocate for diversity in technology and an active speaker in AI and Data Science conferences.</p>
+    <section id="about" class="container my-5 p-4 shadow-lg rounded bg-light animate__animated animate__fadeInUp">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="static/img/profile.jpg" alt="Profile Picture" class="profile-pic img-fluid rounded-circle border border-dark wow animate__zoomIn">
+            </div>
+            <div class="col-md-8">
+                <h2 class="wow animate__fadeInRight">Who Am I?</h2>
+                <p class="wow animate__fadeInRight">Hello! I'm Anukriti Gupta, an AI Consultant with expertise in scalable data solutions, machine learning, and real-time analytics.</p>
+                <p class="wow animate__fadeInRight">With over 10 years of experience, I have worked with leading companies, optimizing AI-driven projects and developing advanced data systems.</p>
+                <p class="wow animate__fadeInRight">Beyond my professional career, I am an advocate for diversity in technology and an active speaker in AI and Data Science conferences.</p>
+            </div>
         </div>
     </section>
     
-    <section id="resume" class="container" style="text-align: center; margin-top: 20px;">
+    <section id="resume" class="container text-center my-5 animate__animated animate__fadeInUp">
         <h2>My Resume</h2>
-        <p><a href="static/pdf/Resume_Anukriti_Gupta.pdf" target="_blank" style="font-size: 18px; color: #ff9800; text-decoration: none; font-weight: bold;">Download Resume</a></p>
+        <p><a href="static/pdf/Resume_Anukriti_Gupta.pdf" target="_blank" class="btn btn-warning btn-lg shadow">Download Resume</a></p>
     </section>
     
-    <footer style="background: #ff9800; text-align: center; padding: 10px; color: white; position: fixed; width: 100%; bottom: 0;">
+    <footer class="bg-warning text-white text-center py-3 shadow-lg">
         <p>&copy; 2025 Anukriti Gupta. All rights reserved.</p>
     </footer>
 </body>
