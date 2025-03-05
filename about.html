@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +8,8 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <header>
+    <header style="background: #ff9800; padding: 20px; text-align: center; color: white;">
         <h1>About Me</h1>
-        <img src="static/img/profile.jpg" alt="Profile Picture" class="profile-pic">
-
         <nav>
             <ul>
                 <li><a href="about.html">Home</a></li>
@@ -25,14 +24,24 @@
         </nav>
     </header>
     
-    <section id="about">
-        <h2></h2>
-        <p>Anukriti Gupta, a seasoned AI Consultant with over 10 years of experience in architecting AI and data-driven solutions. My journey has spanned across multiple industries, including Healthcare, Banking, and Supply Chain, where I have successfully implemented scalable, high-performance analytics models.</p>
-        <p>As a thought leader, I have spoken at various AI and Data Science conferences, including MinneAnalytics, AIM, DSCI, and Nasscom. My contributions to AI research have helped enterprises leverage the power of Graph Learning, NLP, and Deep Learning.</p>
-        <p>Beyond work, I am an advocate for gender diversity in technology and an active organizer for RLadies Delhi and Women in Data Science (WIDS) Delhi.</p>
+    <section id="about" class="container" style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="flex: 1; text-align: center;">
+            <img src="static/img/profile.jpg" alt="Profile Picture" class="profile-pic" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 3px solid #333;">
+        </div>
+        <div style="flex: 2; padding: 20px;">
+            <h2>Who Am I?</h2>
+            <p>Hello! I'm Anukriti Gupta, an AI Consultant with expertise in scalable data solutions, machine learning, and real-time analytics.</p>
+            <p>With over 10 years of experience, I have worked with leading companies, optimizing AI-driven projects and developing advanced data systems.</p>
+            <p>Beyond my professional career, I am an advocate for diversity in technology and an active speaker in AI and Data Science conferences.</p>
+        </div>
     </section>
     
-    <footer>
+    <section id="resume" class="container" style="text-align: center; margin-top: 20px;">
+        <h2>My Resume</h2>
+        <p><a href="static/pdf/Resume_Anukriti_Gupta.pdf" target="_blank" style="font-size: 18px; color: #ff9800; text-decoration: none; font-weight: bold;">Download Resume</a></p>
+    </section>
+    
+    <footer style="background: #ff9800; text-align: center; padding: 10px; color: white; position: fixed; width: 100%; bottom: 0;">
         <p>&copy; 2025 Anukriti Gupta. All rights reserved.</p>
     </footer>
 </body>
